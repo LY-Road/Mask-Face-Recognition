@@ -16,17 +16,17 @@ V6对应网络模型：https://pan.baidu.com/s/11NnoNpG1oQsWlre9Wdl_Tw 提取码
 V8对应网络模型：https://pan.baidu.com/s/17We4cUWyi3Iy0qHWY4Yhzg 提取码：gxk7  
 V9对应网络模型：https://pan.baidu.com/s/1OXjlwnd45rgvEJhIjCBwjw 提取码：udp4  
 ### 不戴口罩数据预处理
-● 找到Data_preprocessing/Image_processing.py，设置notmasked=True,masked=False,然后定义输入data路径,执行如下命令：  
+◆ 找到Data_preprocessing/Image_processing.py，设置notmasked=True,masked=False,然后定义输入data路径,执行如下命令：  
 > $ cd Data_preprocessing/    
 > $ python3 Image_processing.py   
->  
-进行主要操作为不戴口罩切人脸/对齐/生成mask(把图像中的人脸切下来，做2轴对齐，再根据68人脸特征点生成Attention模块用的mask图)：其中的‘shape_predictor_68_face_landmarks.dat’ ，是68人脸特征点预测模型，官方下载地址（http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2）。
 
-● 生成数据读取的csv文件：    
+进行的主要操作为不戴口罩切人脸/对齐/生成mask(把图像中的人脸切下来，做2轴对齐，再根据68人脸特征点生成Attention模块用的mask图)：其中的‘shape_predictor_68_face_landmarks.dat’ ，是68人脸特征点预测模型，官方下载地址（http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2）。
+
+◆ 生成数据读取的csv文件：    
 > $ cd Data_preprocessing/  
 > $ python3 Make_csv_file_notmask.py  
 
-保存的csv格式形如：序号，图片名称，人名  
+保存的csv格式形如：序号，图片名称，人名。
 ### 戴口罩数据预处理
 
 
