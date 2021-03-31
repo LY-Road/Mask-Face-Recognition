@@ -41,10 +41,10 @@ V9对应网络模型：https://pan.baidu.com/s/1OXjlwnd45rgvEJhIjCBwjw 提取码
 保存的csv格式形如：序号，图片名称，人名。
 
 ### 关于配置文件
-不戴口罩的修改config_notmask.py，戴口罩的修改config_mask.py文件
+不戴口罩的修改config_notmask.py，戴口罩的修改config_mask.py文件。
 
 ### 关于代码
-文件名有_notmask后缀的是不戴口罩的代码，文件名有_mask后缀的是戴口罩的代码
+文件名有_notmask后缀的是不戴口罩的代码，文件名有_mask后缀的是戴口罩的代码。
 
 ### 训练
 戴口罩V1运行: 
