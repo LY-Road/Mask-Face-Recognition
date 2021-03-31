@@ -41,11 +41,11 @@ V9对应网络模型：https://pan.baidu.com/s/1OXjlwnd45rgvEJhIjCBwjw 提取码
 保存的csv格式形如：序号，图片名称，人名。
 
 ### 训练
-戴口罩V1运行:
+戴口罩V1运行: 
 > $ python3 train_maskV1.py  
-不戴口罩V3运行:
+不戴口罩V3运行:  
 > $ python3 train_notmaskV3.py  
-戴口罩V9运行: 
+戴口罩V9运行:   
 > $ python3 train_maskV9.py
 
 训练最开始的时候会生成triplets图片对，生成的图片对会保存起来，以便之后使用。
