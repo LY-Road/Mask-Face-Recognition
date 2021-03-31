@@ -58,7 +58,7 @@ V9对应网络模型：https://pan.baidu.com/s/1OXjlwnd45rgvEJhIjCBwjw 提取码
 
 训练最开始的时候会生成triplets图片对，生成的图片对会保存起来，以便之后使用。
 
-### 模型验证
+### 训练过程中模型验证
 验证测试过程中会采用戴口罩的LFW数据和不戴口罩的LFW数据，会打印输出相应的AUC结果，其中evaluate_lfw函数中的参数pltshow，用来控制是否保存ROC曲线图，ROC曲线图保存在ROC_images文件夹里面
 模型是保存在Model_training_checkpoints文件夹里面，日志文件保存在logs文件夹里面。
 
