@@ -40,6 +40,12 @@ V9对应网络模型：https://pan.baidu.com/s/1OXjlwnd45rgvEJhIjCBwjw 提取码
 
 保存的csv格式形如：序号，图片名称，人名。
 
+### 关于配置文件
+不戴口罩的修改config_notmask.py，戴口罩的修改config_mask.py文件
+
+### 关于代码
+文件名有_notmask后缀的是不戴口罩的代码，文件名有_mask后缀的是戴口罩的代码
+
 ### 训练
 戴口罩V1运行: 
 > $ python3 train_maskV1.py  
@@ -52,8 +58,20 @@ V9对应网络模型：https://pan.baidu.com/s/1OXjlwnd45rgvEJhIjCBwjw 提取码
 
 训练最开始的时候会生成triplets图片对，生成的图片对会保存起来，以便之后使用。
 
-### 关于配置文件
-不戴口罩的修改config_notmask.py，戴口罩的修改config_mask.py文件
+### 模型验证
+验证测试过程中会采用戴口罩的LFW数据和不戴口罩的LFW数据，会打印输出相应的AUC结果，其中evaluate_lfw函数中的参数pltshow，用来控制是否保存ROC曲线图，ROC曲线图保存在ROC_images文件夹里面
+模型是保存在Model_training_checkpoints文件夹里面，日志文件保存在logs文件夹里面。
 
-### 关于代码
-文件名有_notmask后缀的是不戴口罩的代码，文件名有_mask后缀的是戴口罩的代码
+#### 使用LFW数据集验证测试集AUC结果
+执行如下代码：
+> $ python3 validation_LFW.py  
+
+测试结果包含AUC、Accuray和最佳距离指标等，测试集相同但输入网络有两种图，一种是戴口罩的LFW人脸图片，一种是不戴口罩的LFW人脸图片。
+
+#### 非LFW数据集生成LFW格式的pairs.txt文件
+执行如下代码：
+> $ python3 create_pairs.py
+
+####  使用生成的paris.txt文件验证测试非LFW数据集
+执行如下代码：
+> $ python3 validation_NOTLFW.py
