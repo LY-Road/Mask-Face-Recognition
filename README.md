@@ -22,7 +22,7 @@ V9对应网络模型：https://pan.baidu.com/s/1OXjlwnd45rgvEJhIjCBwjw 提取码
 >  
 进行主要操作为不戴口罩切人脸/对齐/生成mask(把图像中的人脸切下来，做2轴对齐，再根据68人脸特征点生成Attention模块用的mask图)：其中的‘shape_predictor_68_face_landmarks.dat’ ，是68人脸特征点预测模型，官方下载地址（http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2）。
 
-● 生成数据读取的csv文件（输入数据文件夹路径、输出csv文件路径）：    
+● 生成数据读取的csv文件：    
 > $ cd Data_preprocessing/  
 > $ python3 Make_csv_file_notmask.py  
 
