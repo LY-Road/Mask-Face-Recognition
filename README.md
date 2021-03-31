@@ -43,8 +43,10 @@ V9对应网络模型：https://pan.baidu.com/s/1OXjlwnd45rgvEJhIjCBwjw 提取码
 ### 训练
 戴口罩V1运行: 
 > $ python3 train_maskV1.py  
+
 不戴口罩V3运行:  
 > $ python3 train_notmaskV3.py  
+
 戴口罩V9运行:   
 > $ python3 train_maskV9.py
 
