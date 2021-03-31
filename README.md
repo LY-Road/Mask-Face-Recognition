@@ -16,7 +16,7 @@ V6对应网络模型：https://pan.baidu.com/s/11NnoNpG1oQsWlre9Wdl_Tw 提取码
 V8对应网络模型：https://pan.baidu.com/s/17We4cUWyi3Iy0qHWY4Yhzg 提取码：gxk7  
 V9对应网络模型：https://pan.baidu.com/s/1OXjlwnd45rgvEJhIjCBwjw 提取码：udp4  
 ### 不戴口罩数据预处理
-● 设置notmasked=True,masked=False,然后定义输入data路径,执行如下命令：  
+● 找到Data_preprocessing/Image_processing.py，设置notmasked=True,masked=False,然后定义输入data路径,执行如下命令：  
 > $ cd Data_preprocessing/    
 > $ python3 Image_processing.py   
 >  
